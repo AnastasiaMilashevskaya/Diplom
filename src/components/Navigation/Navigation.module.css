@@ -1,0 +1,50 @@
+.nav {
+  height: 80px;
+  width: 1920px;
+  left: 0px;
+  top: 44px;
+  border-radius: 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__title {
+  height: 49px;
+  width: 300px;
+  left: 405px;
+  top: 59px;
+  border-radius: nullpx;
+  font-family: Post No Bills Jaffna;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 5px;
+  color: black;
+}
+.nav__list {
+  width: 500px;
+  vertical-align: center;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.nav__item {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: #86878b;
+}
+
+.link_style {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__item :hover {
+  color: gold;
+}

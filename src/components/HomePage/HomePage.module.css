@@ -1,0 +1,25 @@
+.header {
+  background-image: url(/src/images/header_background.jpg);
+  height: 810px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0 70px;
+  color: #ffffff;
+  text-align: center;
+}
+.header__title {
+  text-align: center;
+  font-size: 55px;
+  font-family: "Raleway", sans-serif;
+  padding: 100px;
+  letter-spacing: 0.2px;
+  border: 8px double #f9f9f9;
+}
+.header__subtitle {
+  width: 600px;
+  height: 200px;
+  color: #ffffff;
+  font-size: 30px;
+}

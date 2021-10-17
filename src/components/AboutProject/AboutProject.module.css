@@ -1,0 +1,94 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  padding: 58px 8% 118px;
+}
+
+.about__title {
+  position: relative;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__title::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 2px;
+  background-color: gold;
+}
+
+.about__body {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin: 58px 0 0 0;
+}
+
+.about__info {
+  width: 500px;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.about__subtitle {
+  left: 90px;
+  align-items: flex-start;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 27px;
+  color: black;
+  width: 700px;
+}
+
+.text__yellow {
+  color: gold;
+}
+
+.about__text {
+  top: 400px;
+  left: 90px;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 23px;
+  line-height: 23px;
+  letter-spacing: 0.2px;
+  color: black;
+  padding-bottom: 130px;
+  width: 700px;
+}
+.about__joker {
+  display: flex;
+  margin-bottom: 5px;
+  background-image: url(/src/images/about_joker.jpg);
+  width: 450px;
+  height: 253px;
+  margin-left: 520px;
+}
+.about__ship {
+  margin-bottom: 15px;
+  background-image: url(/src/images/about_ship.jpg);
+  width: 450px;
+  height: 253px;
+  margin-left: 820px;
+}
+.about__wolves {
+  margin-bottom: 15px;
+  background-image: url(/src/images/about_wolves.jpg);
+  width: 450px;
+  height: 253px;
+  margin-left: 520px;
+}
