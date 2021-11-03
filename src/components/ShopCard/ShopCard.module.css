@@ -1,0 +1,44 @@
+.shop__title {
+    text-align: center;
+  }
+  
+  .shop__title::before {
+    content: "";
+    position: absolute;
+    top: 115px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 2px;
+    background-color: gold;
+  }
+  
+  .shop__cards {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap row;
+  
+  }
+  
+  .shop__card {
+    margin: 15px;
+    margin-top: 90px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    background-color: #fffacd;
+    width: 400px;
+    border: 5px inset orange;
+  
+  }
+  .example__img {
+    background-image: url(/src/images/shop_example1.jpg);
+    height: 260px;
+  }
+  .description {
+    height: 150px;
+  }
+  
+  .price {
+    height: 50px;
+    background-color: #f0e68c;
+  }

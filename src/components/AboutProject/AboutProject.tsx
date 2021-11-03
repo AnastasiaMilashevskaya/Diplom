@@ -3,9 +3,10 @@ import styles from "./AboutProject.module.css";
 export function AboutProject() {
   return (
     <div className={styles.about}>
-      <h2 className={styles.about__title}>Наша история</h2>
+      <h2 className={styles.about__title} id="about">Наша история</h2>
       <div className={styles.about__body}></div>
-      <div className={styles.about__info}> </div>
+      <div className={styles.about__info}>  
+      <div className={styles.about__article}>
       <h3 className={styles.about__subtitle}>
         Проект <span className={styles.text__yellow}>ArtWikipedia</span> -
         крупнейшая онлайн-платформа Беларуси, работающая на рынке
@@ -24,10 +25,14 @@ export function AboutProject() {
         Вашем бюджете, цели покупки, цветовом решении или совокупности
         нескольких задач.
       </p>
+      </div>
+      <div className={styles.about__photo}>
       <div className={styles.about__card}> </div>
       <div className={styles.about__joker}></div>
       <div className={styles.about__ship}></div>
       <div className={styles.about__wolves}></div>
-    </div>
+      </div>
+      </div>
+      </div>
   );
 }

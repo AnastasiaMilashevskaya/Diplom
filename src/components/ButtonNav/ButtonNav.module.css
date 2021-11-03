@@ -1,0 +1,12 @@
+.button{
+    width: 200px;
+    height: 50px;
+    padding: 3px;
+    background: linear-gradient(90deg, rgb(247, 90, 66), rgb(197, 143, 14));
+    margin-top: 5px;
+    position: fixed;
+    top: 0px;
+    left: 1630px;
+font-weight: 700;
+z-index: 10;
+}

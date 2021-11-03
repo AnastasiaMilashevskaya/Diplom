@@ -1,0 +1,90 @@
+.footer__body {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 110px 40px 105px;
+    font-size: 11px;
+    color: black;
+    background-color: orange;
+}
+
+.footer__subtitle {
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.company__text {
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    letter-spacing: 0.85px;
+    line-height: 19px;
+    font-size: 20px;
+    color: black;
+}
+
+.footer__lists {
+    display: flex;
+    justify-content: space-between;
+    width: 262px;
+}
+
+.footer__link {
+    line-height: 25px;
+    letter-spacing: 0.85px;
+    text-transform: uppercase;
+}
+
+.footer__contact {
+    display: flex;
+    width: 700px;
+}
+
+.contact__adress {
+    width: 700px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.footer__contact__text {
+    width: 725px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+}
+
+.phone {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.mail {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+
+
+.footer__copyright {
+    padding: 25px 0;
+    text-align: center;
+    background-color: #171819;
+}
+
+.copyright__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.85px;
+    color: #ffffff;
+}
+

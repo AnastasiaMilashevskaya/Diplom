@@ -1,6 +1,8 @@
 import { createStore, combineReducers } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-
-export interface IState {}
-
-export const store = createStore(combineReducers({}), composeWithDevTools());
+import { IShopState, shopReducer } from "./reducers/shop";
+export interface IState {
+    shop: any;
+    posts: IShopState;
+  }
+export const store = createStore(combineReducers({shops:shopReducer}), composeWithDevTools());

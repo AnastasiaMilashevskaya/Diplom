@@ -1,6 +1,6 @@
 .shop {
   padding: 58px 8% 118px;
-  height: 800px;
+ 
   position: relative;
   font-size: 23px;
   font-weight: 700;
@@ -28,6 +28,7 @@
   display: flex;
   justify-content: space-around;
   flex-flow: wrap row;
+
 }
 
 .shop__card {
@@ -39,6 +40,7 @@
   background-color: #fffacd;
   width: 400px;
   border: 5px inset orange;
+
 }
 .example__img {
   background-image: url(/src/images/shop_example1.jpg);
@@ -52,3 +54,4 @@
   height: 50px;
   background-color: #f0e68c;
 }
+

@@ -1,0 +1,12 @@
+.container {
+    padding: 58px 8% 118px;
+   
+    position: relative;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2.3px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  

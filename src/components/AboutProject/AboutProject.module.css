@@ -33,10 +33,15 @@
   margin: 58px 0 0 0;
 }
 
-.about__info {
-  width: 500px;
-  text-align: left;
-  align-items: flex-start;
+.about__article{
+  display: flex;
+  flex-direction: column;
+}
+.about__info{
+  display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
 }
 
 .about__subtitle {
@@ -70,25 +75,30 @@
   padding-bottom: 130px;
   width: 700px;
 }
+.about__photo{
+  display: flex;
+  flex-direction: column;
+
+}
 .about__joker {
   display: flex;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   background-image: url(/src/images/about_joker.jpg);
   width: 450px;
   height: 253px;
-  margin-left: 520px;
+  margin-left: 230px;
 }
 .about__ship {
   margin-bottom: 15px;
   background-image: url(/src/images/about_ship.jpg);
   width: 450px;
   height: 253px;
-  margin-left: 820px;
+  margin-left:410px;
 }
 .about__wolves {
   margin-bottom: 15px;
   background-image: url(/src/images/about_wolves.jpg);
   width: 450px;
   height: 253px;
-  margin-left: 520px;
+  margin-left: 230px;
 }
