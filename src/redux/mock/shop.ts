@@ -1,11 +1,22 @@
 import { url } from "inspector";
 
 export const shops = [
-    {
-        id:1,
-        title: "фывфывфыв",
-      image: "https://sun9-4.userapi.com/impg/8ZBZlss8n6AeztiED6i5CLfxydJlrwl73XVWZA/34gq6OxtkVI.jpg?size=686x866&quality=96&sign=b95f22760cf977b83d85ce0df8babd23&type=album",
-      text: "фыв",
-      author: "Артём Шлеменков",
-     
-    }]
+  {
+    id: 1,
+    image:
+      "https://sun2.beltelecom-by-minsk.userapi.com/impg/5hF7_lSrWHEGqBNHjqsSaIPc1t1s5g6eHmGsWg/8wu8ddqEdVA.jpg?size=1920x1427&quality=96&sign=ef0a500ad83b6e40f7a018abc3f1aa8c&type=album",
+    text: "Эта картина лучший подарок🖤 Никому не продам, просто показываю...(Акрил.Холст 40x60)",
+
+    title: "Малыш Йода",
+    author: "Артём Шлеменков",
+  },
+  {
+    id: 2,
+    image:
+      "https://sun9-33.userapi.com/impg/LDz_2Zb42di5QOEktrQUHF4oSAUQLzDAQH03VA/GzNKnuglCxo.jpg?size=819x536&quality=96&sign=2a13c3b2586f985d15a5af7dfdfa55e8&type=album",
+    text: "Вино в Туссенте льется рекой, музыка звучит беспрестанно, а воздух повсюду полон птичьими трелями и пеньем прелестниц...(Акрил.Холст 40x60)",
+
+    title: "",
+    author: "Артём Шлеменков",
+  },
+];
