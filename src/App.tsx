@@ -28,6 +28,7 @@ function App() {
         <RootRouter />
       </Provider>
       <ButtonNav onClick={() => setIsVisible(true)} />
+    
       <Form
         title="Оформление заявки"
         onClose={() => setIsVisible(false)}

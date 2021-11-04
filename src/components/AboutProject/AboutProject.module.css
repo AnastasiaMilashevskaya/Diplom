@@ -1,7 +1,8 @@
 .about {
   display: flex;
   flex-direction: column;
-
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
   padding: 58px 8% 118px;
 }
 
@@ -23,6 +24,7 @@
   width: 80px;
   height: 2px;
   background-color: gold;
+  font-size: 30px;
 }
 
 .about__body {
