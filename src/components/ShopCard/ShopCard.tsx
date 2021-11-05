@@ -1,13 +1,22 @@
-
-
 import { useHistory } from "react-router-dom";
 import { IShop } from "../../redux/types";
 import styles from "./ShopCard.module.css";
-export const ShopCard = ({ image, title, text, id,author}: IShop) => {
+
+interface IProps extends IShop {
+  onClick: () => void;
+}
+
+export const ShopCard = ({
+  image,
+  title,
+  text,
+  id,
+  author,
+  onClick,
+}: IProps) => {
   const history = useHistory();
 
   return (
-    
     <div
       className={styles.shop__cards}
       onClick={() => history.push(`/shops/${id}`)}
@@ -18,10 +27,15 @@ export const ShopCard = ({ image, title, text, id,author}: IShop) => {
         <p className={styles.description}>{text}</p>
         <p className={styles.author}>{author}</p>
       </div>
-      <button className={styles.shop__button}  >
+      <button
+        className={styles.shop__button}
+        onClick={(event) => {
+          event.stopPropagation();
+          onClick();
+        }}
+      >
         Предложить свою цену
       </button>
     </div>
   );
 };
-

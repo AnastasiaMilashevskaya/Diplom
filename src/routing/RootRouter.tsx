@@ -15,9 +15,13 @@ export function RootRouter() {
     <BrowserRouter>
       <>
         <Navigation />
-        <Route exact path="/"><HomePage /></Route>
-        <Route exact path="/about"><AboutProject /></Route>
-       
+        <Route exact path="/">
+          <HomePage />
+        </Route>
+        <Route exact path="/about">
+          <AboutProject />
+        </Route>
+
         <Switch>
           <Route exact path="/shop">
             <Shop />

@@ -6,6 +6,9 @@ import { IShop } from "../../redux/types";
 import { IState } from "../../redux/store";
 import { Container } from "../Container";
 import { ShopCard } from "../ShopCard";
+import { Form } from "../Form";
+import { Modal } from "../Modal";
+import { ButtonAdd } from "../ButtonAdd";
 
 export function getShopPerPage(allShop: IShop[], page: number) {
   return allShop.slice(0, (page + 1) * 3);
@@ -15,6 +18,8 @@ export const Shop = () => {
   const allShop = useSelector((state: IState) => state.shops.shops);
   const totalPages = allShop.length / 3;
   const [page, setPage] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const [isDisplay, setIsDisplay] = useState(false);
 
   const shops = getShopPerPage(allShop, page);
 
@@ -31,6 +36,7 @@ export const Shop = () => {
           }
           title={"Малыш Йода"}
           author={"Артём Шлеменков"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={2}
@@ -42,6 +48,7 @@ export const Shop = () => {
           }
           title={""}
           author={"Артём Шлеменков"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={3}
@@ -53,6 +60,7 @@ export const Shop = () => {
           }
           title={"Рассвет на хуторе"}
           author={"Женщина,32 года"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={4}
@@ -62,6 +70,7 @@ export const Shop = () => {
           text={"Одинокий воин (Акрил.Холст 40x60)"}
           title={""}
           author={"Артём Шлеменков"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={5}
@@ -71,6 +80,7 @@ export const Shop = () => {
           text={"Какава красота"}
           title={"Ирис"}
           author={"Варвара Бехтерева"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={6}
@@ -80,6 +90,7 @@ export const Shop = () => {
           text={"This is the way"}
           title={""}
           author={"Артём Шлеменков"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={7}
@@ -87,6 +98,7 @@ export const Shop = () => {
           text={"Окружающий мир кажется мёртвым, и Амели живёт мечтами…"}
           title={"Амели"}
           author={"Alla Milash"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={8}
@@ -96,6 +108,7 @@ export const Shop = () => {
           text={"Угу-угу"}
           title={"Филин Дмитрий"}
           author={"Дмитрий Беляев"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={9}
@@ -103,6 +116,7 @@ export const Shop = () => {
           text={"Улыбаемся и машем, парни. Улыбаемся и машем!"}
           title={""}
           author={"Revan"}
+          onClick={() => setIsVisible(true)}
         />
         <ShopCard
           id={10}
@@ -114,6 +128,7 @@ export const Shop = () => {
           }
           title={""}
           author={"Миранда"}
+          onClick={() => setIsVisible(true)}
         />
         {totalPages > 1 && page < totalPages ? (
           <ButtonShow
@@ -125,6 +140,64 @@ export const Shop = () => {
           />
         ) : null}
       </div>
+
+      <Form
+        title="Оформление заявки"
+        onClose={() => setIsVisible(false)}
+        isVisible={isVisible}
+      >
+        <label> Имя/Name</label>
+        <input placeholder="Введите имя" />
+        <label> Фамилия/Surname</label>
+        <input placeholder="Введите фамилию" />
+        <label> Отчество/Middle name</label>
+        <input placeholder="Введите отчество (если имеется)" />
+        <label> E-mail</label>
+        <input placeholder="Введите e-mail" />
+        <label> Стоимость картины, $</label>
+        <input placeholder="Введите стоимость картины,$" />
+        <label> Описание картины</label>
+        <textarea> </textarea>
+        <input type="file" name="photo" multiple accept="image/*,image/jpeg" />
+        <ButtonAdd
+          onClick={() =>
+            setTimeout(function () {
+              setIsVisible(false);
+              alert(
+                "Ваша заявка отправлена и будет одобрена модератором через 30 минут!"
+              );
+            }, 700)
+          }
+        />
+      </Form>
+      <Modal
+        title="Предлагаемая цена:"
+        onClose={() => setIsDisplay(false)}
+        isDisplay={isDisplay}
+      >
+        <label> Имя/Name</label>
+        <input placeholder="Введите имя" />
+        <label> Фамилия/Surname</label>
+        <input placeholder="Введите фамилию" />
+        <label> Отчество/Middle name</label>
+        <input placeholder="Введите отчество (если имеется)" />
+        <label> E-mail</label>
+        <input placeholder="Введите e-mail" />
+        <label> Предлагаемая цена</label>
+        <input placeholder="Введите Вашу цену, $" />
+        <button
+          onClick={() =>
+            setTimeout(function () {
+              setIsDisplay(false);
+              alert(
+                "Ваша цена зафиксирована. Об окончании аукциона Вам сообщат на e-mail."
+              );
+            }, 700)
+          }
+        >
+          Ок
+        </button>
+      </Modal>
     </Container>
   );
 };
