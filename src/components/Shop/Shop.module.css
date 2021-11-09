@@ -1,6 +1,6 @@
 .shop {
   padding: 58px 8% 118px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   font-size: 23px;
   font-weight: 700;
@@ -26,18 +26,15 @@
 
 .shop__card {
   margin: 15px;
- margin-top: 40px;
+  margin-top: 40px;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
-  background-color: #FFEBCD;
+  background-color: #ffebcd;
   width: 400px;
   border: 5px inset orange;
-
-
 }
 .example__img {
-  
   height: 260px;
 }
 .description {
@@ -49,8 +46,7 @@
   background-color: #f0e68c;
 }
 
-.content{
-
+.content {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;

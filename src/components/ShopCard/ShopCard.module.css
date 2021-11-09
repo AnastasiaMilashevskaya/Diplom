@@ -1,60 +1,59 @@
 .shop__title {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-  }
-  
-  .shop__title::before {
-    content: "";
-    position: absolute;
-    top: 115px;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 2px;
-    background-color: gold;
-  }
-  
-  .shop__cards {
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: flex-start;
-      flex-flow: wrap row;
-      align-content: space-around;
-      align-items: stretch;
-      flex-wrap: wrap;
-      flex-direction: column;
-      background-color: #FFDEAD;
-      margin-top: 20px;
-      border: thick double #1b0907;
-  }
-  
-  .shop__card {
-    margin: 15px;
-    margin-top: 40px;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    background-color: #FFEBCD;
-    width: 350px;
-    border: 1px inset rgb(0, 0, 0);
-   font-size: 18px;
-   height: 195px;
-  }
-  .example__img {
-   
-    height: 260px;
-  }
-  .description {
-    height: 150px;
-  }
-  
-  .price {
-    height: 50px;
-    background-color: #f0e68c;
-  }
-  .shop__button{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-  background-color: #CD853F;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.shop__title::before {
+  content: "";
+  position: absolute;
+  top: 115px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 2px;
+  background-color: gold;
+}
+
+.shop__cards {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap row;
+  align-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #ffdead;
+  margin-top: 20px;
+  border: thick double #1b0907;
+}
+
+.shop__card {
+  margin: 15px;
+  margin-top: 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  background-color: #ffebcd;
+  width: 350px;
+  border: 1px inset rgb(0, 0, 0);
+  font-size: 18px;
+  height: 195px;
+}
+.example__img {
+  height: 260px;
+}
+.description {
+  height: 150px;
+}
+
+.price {
+  height: 50px;
+  background-color: #f0e68c;
+}
+.shop__button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  background-color: #cd853f;
   font-weight: 700;
-  }
+}

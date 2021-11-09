@@ -19,4 +19,15 @@ export const shops = [
     title: "",
     author: "Артём Шлеменков",
   },
+  {
+    id:3,
+    image:
+      "https://cs1.livemaster.ru/storage/ab/c9/2c37093a005a06b45a46b56b3agd--kartiny-i-panno-kartina-maslom-krasota-prirody.jpg",
+    
+    text:
+      "Брызнули первые искры рассвета,Дымкой туманной покрылся ручей.В утренний час его рокот звончей.Ночь умирает…",
+    title:"Рассвет на хуторе",
+    author:"Женщина,32 года",
+    
+  },
 ];

@@ -1,16 +1,13 @@
 .container {
-    padding: 58px 8% 118px;
-
-    position: relative;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 2.3px;
-    color: black;
-    text-transform: uppercase;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
-  
-  }
-  
+  padding: 58px 8% 118px;
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2.3px;
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", Courier, monospace;
+}

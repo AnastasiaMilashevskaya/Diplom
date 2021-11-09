@@ -1,7 +1,7 @@
 .about {
   display: flex;
   flex-direction: column;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 16px;
   padding: 58px 8% 118px;
 }
@@ -35,15 +35,15 @@
   margin: 58px 0 0 0;
 }
 
-.about__article{
+.about__article {
   display: flex;
   flex-direction: column;
 }
-.about__info{
+.about__info {
   display: flex;
-    flex-direction: row;
-    
-    justify-content: space-around;
+  flex-direction: row;
+
+  justify-content: space-around;
 }
 
 .about__subtitle {
@@ -77,10 +77,9 @@
   padding-bottom: 130px;
   width: 700px;
 }
-.about__photo{
+.about__photo {
   display: flex;
   flex-direction: column;
-
 }
 .about__joker {
   display: flex;
@@ -95,7 +94,7 @@
   background-image: url(/src/images/about_ship.jpg);
   width: 450px;
   height: 253px;
-  margin-left:410px;
+  margin-left: 410px;
 }
 .about__wolves {
   margin-bottom: 15px;
